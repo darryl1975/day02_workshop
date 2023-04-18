@@ -96,7 +96,7 @@ public class BankAccount {
         if (balance < amount) { 
             throw new IllegalArgumentException("Withdrawal amount is more than the account balance");
         } else {
-            balance = balance = amount;
+            balance = balance + amount;
 
             Date dt = new Date();
             transactions.add("Withdraw " + amount + " to account " + accountNumber + " on " + dt.toString());
